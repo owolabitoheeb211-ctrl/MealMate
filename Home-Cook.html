@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMate | Home Cook Portal</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: #FDFCF8; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .flex-container { display: flex; flex-direction: column; width: 100%; min-height: 100vh; }
+        .marketing-sidebar { background-color: #2B4C3F; padding: 40px 24px; color: #FDFCF8; display: flex; flex-direction: column; justify-content: center; }
+        .logo-box { height: 48px; width: auto; align-self: flex-start; margin-bottom: 20px; object-fit: contain; }
+        .main-title { font-family: 'Inter', sans-serif; font-size: 32px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; letter-spacing: -0.5px; color: #FDFCF8; }
+        .sub-desc { font-size: 14px; opacity: 0.85; margin-bottom: 28px; max-width: 450px; line-height: 1.5; color: #E5E7EB; }
+        .feat-list { display: flex; flex-direction: column; gap: 18px; list-style: none; }
+        .feat-item { display: flex; gap: 14px; align-items: flex-start; }
+        .feat-icon { background: rgba(255,255,255,0.1); padding: 8px; border-radius: 10px; font-size: 16px; }
+        .feat-title { font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; color: #FDFCF8; }
+        .feat-desc { font-size: 12px; color: #D1D5DB; line-height: 1.4; }
+        .form-section { width: 100%; padding: 40px 24px; background: white; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; }
+        .form-wrapper { width: 100%; max-width: 400px; margin: 0 auto; }
+        .form-header { margin-bottom: 24px; text-align: left; }
+        .form-title { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 800; color: #1E1E1E; letter-spacing: -0.5px; }
+        .form-subtitle { color: #9CA3AF; font-size: 12px; font-weight: 500; margin-top: 4px; line-height: 1.4; }
+        .space-y { display: flex; flex-direction: column; gap: 16px; }
+        .label-text { display: block; font-size: 11px; font-weight: 700; color: #374151; text-transform: uppercase; margin-bottom: 6px; }
+        .input-field { width: 100%; padding: 12px 16px; border-radius: 12px; border: 1px solid #E5E7EB; background: #F9FAFB; font-size: 14px; outline: none; transition: all 0.2s; color: #1E1E1E; }
+        .input-field:focus { border-color: #F24826; background: white; box-shadow: 0 0 0 1px #F24826; }
+        .verify-box { background: #F9FAFB; padding: 14px; border-radius: 12px; border: 1px dashed #D1D5DB; margin-top: 4px; }
+        .verify-box p { font-size: 11px; font-weight: 700; color: #F24826; text-transform: uppercase; margin-bottom: 10px; }
+        .file-input { font-size: 12px; color: #6B7280; width: 100%; }
+        .submit-btn { width: 100%; background: #F24826; color: white; font-weight: 700; padding: 14px; border-radius: 12px; border: none; font-size: 13px; cursor: pointer; transition: background 0.2s; margin-top: 10px; text-transform: uppercase; }
+        .submit-btn:hover { background: #d43d1d; }
+        .toggle-container { margin-top: 24px; text-align: center; font-size: 13px; color: #6B7280; font-weight: 500; }
+        .toggle-link { color: #F24826; font-weight: 700; background: none; border: none; text-decoration: underline; cursor: pointer; margin-left: 4px; font-size: 13px; }
+        .response-text { margin-top: 16px; text-align: center; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; min-height: 16px; }
+        .hidden { display: none !important; }
+        @media (min-width: 1024px) {
+            .flex-container { flex-direction: row; }
+            .marketing-sidebar { width: 50%; padding: 64px; min-height: 100vh; }
+            .form-section { width: 50%; padding: 64px; min-height: 100vh; }
+            .main-title { font-size: 44px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="marketing-sidebar">
+            <a href="index.html"><img src="mealmate-logo.jpg" alt="MealMate Brand Logo" class="logo-box"></a>
+            <h1 class="main-title">Grow Your<br>Kitchen Business</h1>
+            <p class="sub-desc">Reach more customers, manage orders, receive instant payouts and grow your business—all from one dashboard.</p>
+            <ul class="feat-list">
+                <li class="feat-item"><span class="feat-icon">📥</span><div><p class="feat-title">Receive Orders</p><p class="feat-desc">Get real-time orders from customers.</p></div></li>
+                <li class="feat-item"><span class="feat-icon">📝</span><div><p class="feat-title">Manage Menu</p><p class="feat-desc">Add, update and manage your meals easily.</p></div></li>
+                <li class="feat-item"><span class="feat-icon">📈</span><div><p class="feat-title">Track Earnings</p><p class="feat-desc">Monitor sales and earnings in real-time.</p></div></li>
+                <li class="feat-item"><span class="feat-icon">⚡</span><div><p class="feat-title">Fast Payouts</p><p class="feat-desc">Get paid quickly and securely.</p></div></li>
+            </ul>
+        </div>
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div id="formHeader" class="form-header">
+                    <h2 id="formTitle" class="form-title">Welcome Back</h2>
+                    <p id="formSub" class="form-subtitle">Sign in to continue managing your kitchen</p>
+                </div>
+                <form id="cookForm" class="space-y" enctype="multipart/form-data">
+                    <div id="signupFields" class="hidden space-y">
+                        <div>
+                            <label class="label-text">Business Name</label>
+                            <input type="text" id="businessName" placeholder="e.g. Iya Moria Kitchen" class="input-field">
+                        </div>
+                        <div>
+                            <label class="label-text">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="e.g. +234 800 123 4567" class="input-field">
+                        </div>
+                        <div class="verify-box">
+                            <p>Identity Verification (Required)</p>
+                            <label class="label-text" style="color: #6B7280; margin-bottom: 4px;">Government ID (NIN/DL)</label>
+                            <input type="file" id="idDoc" accept="image/*,.pdf" class="file-input">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-text">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required class="input-field">
+                    </div>
+                    <div>
+                        <label class="label-text">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required class="input-field">
+                    </div>
+                    <div id="confirmPasswordContainer" class="hidden">
+                        <label class="label-text">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" class="input-field">
+                    </div>
+                    <button type="submit" id="submitBtn" class="submit-btn">Login</button>
+                </form>
+                <div class="toggle-container">
+                    <span id="toggleInstruction">Don't have an account?</span>
+                    <button id="toggleBtn" class="toggle-link">Register Kitchen</button>
+                </div>
+                <p id="responseMsg" class="response-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="home cook.js"></script>
+    <script src="Api.js"></script>
+</body>
+</html>

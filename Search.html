@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealMate Search & Filter</title>
+    <link rel="stylesheet" href="Search.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <section class="leftside">
+        <div class="leftside-container">
+          <!-- Filter & Categories -->
+
+          <div class="filter">
+            <div class="filter-header">
+              <h2 class="filter-title">Filters</h2>
+              <button class="clear-all-btn">Clear all</button>
+            </div>
+
+            <div class="categories">
+              <h3 class="category-title">Categories</h3>
+              <ul class="category-list">
+                <li class="category-item"><span>All</span></li>
+                <li class="category-item active">
+                  <span>Rice Meals</span>
+                  <img
+                    class="check-icon"
+                    src="MEALMATE CHECK ICON.svg"
+                    alt="Selected"
+                  />
+                </li>
+                <li class="category-item"><span>Soups</span></li>
+                <li class="category-item"><span>Swallow Meals</span></li>
+                <li class="category-item"><span>Snacks</span></li>
+                <li class="category-item"><span>Cakes</span></li>
+                <li class="category-item"><span>Food Platters</span></li>
+                <li class="category-item"><span>Drinks</span></li>
+                <li class="category-item"><span>Breakfast</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Price -->
+
+          <div class="price-range">
+            <h3 class="price-title">Price Range</h3>
+            <div class="price-values">
+              <span class="min-price">₦5,000</span>
+              <span class="max-price">₦200,000+</span>
+            </div>
+            <input
+              type="range"
+              class="price-slider"
+              min="5000"
+              max="200000"
+              value="5000"
+            />
+          </div>
+
+          <!-- Delivery -->
+
+          <div class="delivery-time">
+            <h3 class="delivery-title">Delivery Time</h3>
+            <div class="delivery-options">
+              <label class="delivery-option">
+                <input type="radio" name="delivery" checked />
+                <span>Any Time</span>
+              </label>
+              <label class="delivery-option">
+                <input type="radio" name="delivery" />
+                <span>5 - 20 mins</span>
+              </label>
+              <label class="delivery-option">
+                <input type="radio" name="delivery" />
+                <span>20 - 40 mins</span>
+              </label>
+              <label class="delivery-option">
+                <input type="radio" name="delivery" />
+                <span>40 - 60 mins</span>
+              </label>
+              <label class="delivery-option">
+                <input type="radio" name="delivery" />
+                <span>60 mins</span>
+              </label>
+              <label class="delivery-option">
+                <input type="radio" name="delivery" />
+                <span>24 hours</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rightside">
+        <div class="search-header">
+          <h2>Search results for "rice & chicken"</h2>
+          <div class="sort-container">
+            <label for="sort-dropdown">Sort by:</label>
+            <select id="sort-dropdown" class="sort-dropdown">
+              <option>Relevance</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Highest Rated</option>
+            </select>
+          </div>
+        </div>
+        <p class="meals-found">25 meals found</p>
+
+        <div class="food-grid">
+          <article class="food-card">
+            <img
+              src="RICE 1.png"
+              alt="Smoky Jollof Rice & Chicken"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Smoky Jollof Rice & Chicken</h3>
+              <p class="restaurant-name">Zee's Delicacies</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.8 (2,103)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦7,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>20-40 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 5.png"
+              alt="Jollof Rice, Chicken, Plantain & Veggies"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">
+                Jollof Rice, Chicken, Plantain & Veggies
+              </h3>
+              <p class="restaurant-name">Rachi's Cuisine</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.0 (603)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦8,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>20-40 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 2.png"
+              alt="Jollof Rice & Chicken"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Jollof Rice & Chicken</h3>
+              <p class="restaurant-name">Tola's Kitchen</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 3.5 (263)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦6,500</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>5-20 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 6.png"
+              alt="Rice & Beans w Peppered Sauce"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Rice & Beans w Peppered Sauce</h3>
+              <p class="restaurant-name">Amaka's Kitchen</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.8 (946)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦9,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>40-60 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 3.png"
+              alt="Native Rice Platter"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Native Rice Platter</h3>
+              <p class="restaurant-name">Amaka's Kitchen</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.0 (580)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦55,500</span>
+                <div class="action-icons">
+                  <img src=".MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>60 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 7.png"
+              alt="Fried Rice & Chicken"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Fried Rice & Chicken</h3>
+              <p class="restaurant-name">Zee's Delicacies</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.5 (850)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦8,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>20-40 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 4.png"
+              alt="Rice, Plantain and Beef"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Rice, Plantain and Beef</h3>
+              <p class="restaurant-name">Titi's Kitchen</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.8 (2,103)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦5,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>20-40 Minutes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="RICE 8.png"
+              alt="Fried Rice & Chicken Drumsticks"
+              class="food-image"
+            />
+            <div class="food-info">
+              <h3 class="food-title">Fried Rice & Chicken Drumsticks</h3>
+              <p class="restaurant-name">Rachi's Cuisine</p>
+              <div class="rating">
+                <img src="MEALMATE STAR.svg" alt="Rating" />
+                <span> 4.8 (2,589)</span>
+              </div>
+              <div class="price-row">
+                <span class="price">₦10,000</span>
+                <div class="action-icons">
+                  <img src="MEALMATE HEART.svg" alt="Favourite" />
+                  <img src="MEALMATE CART.svg" alt="Add to Cart" />
+                </div>
+              </div>
+              <div class="delivered-time">
+                <i class="fa-solid fa-fire"></i>
+                <span>40-60 Minutes</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

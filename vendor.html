@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor- Dashboard</title>
+    <link rel="stylesheet" href="vendor.css">
+    
+</head>
+<body>
+    <div class="dashboard">        
+        <header>
+            <input type="checkbox" class="sidebar-toggle-checkbox" id="sidebar-toggle">
+            <label for="sidebar-toggle" class="sidebar-toggle-label">&#9776;</label>
+
+            <div class="header-profile">
+                <img src="Group 3.svg" alt="Notification Button" class="notification-icons">
+                <div class="header-profile-contents">
+                    <img src="Ellipse 2.svg" alt="Profile Picture" class="profile-picture">
+                    <div class="header-profile-text">
+                       <h3>Maria's Kitchen</h3>
+                        <p>View Profile</p> 
+                    </div>
+                    <img src="Vector (3).svg" alt="Profile Dropdown" class="dropdown-icon">
+                </div>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-logo-wrapper">
+                    <a href="index.html"><img src="MealMate Logo.svg" alt="MealMate logo" class="sidebar-logo"></a>
+                </div>
+
+                <div class="sidebar-nav-wrapper">
+                    <ul class="sidebar_nav">
+                        <li class="sidebar_nav-item sidebar_nav-item--active">
+                            <a href="#">
+                                <img src="Vector (14).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <span class="sidebar_nav-icon"></span>
+                                <span class="sidebar_nav-label">Homecook Verification</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <img src="Vector (7).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Menu Management</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <img src="Vector.svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Order Management</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <span class="sidebar_nav-icon"></span>
+                                <span class="sidebar_nav-label">Meal Availability</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <img src="Vector (1).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Delivery Handover</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_nav-item">
+                            <a href="#">
+                                <img src="Vector (2).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Sales Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-footer-wrapper">
+                    <ul class="sidebar_footer">
+                        <li class="sidebar_footer-item">
+                            <a href="#">
+                                <img src="Vector (5).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Setting</span>
+                            </a>
+                        </li>
+                        <li class="sidebar_footer-item">
+                            <a href="#">
+                                <img src="Vector (4).svg" alt="" class="icons">
+                                <span class="sidebar_nav-label">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="dashboard-header">
+                <div>
+                    <h2 class="dashboard-title">Home Cook  Dashboard</h2>
+                    <p class="dashboard-subtitle">Welcome back, Maria</p>
+                </div>
+                <div class="dashboard-date-range">
+                    <p>May 15 - Jun 15, 2024</p>
+                    <img src="Group 11.svg" alt="" class="icons">
+                </div>
+            </div>
+
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <div class="stat-card__icon stat-card__icon--green">🔒</div>
+                    <div class="stat-card__content">
+                        <p class="stat-card__label">Total Orders</p>
+                        <h3 class="stat-card__value">48</h3>
+                        <p class="stat-card__trend stat-card__trend--down">▼ 16.5% in last 30 days</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon stat-card__icon--green">💵</div>
+                    <div class="stat-card__content">
+                        <p class="stat-card__label">Total Revenue</p>
+                        <h3 class="stat-card__value">₦245,600</h3>
+                        <p class="stat-card__trend stat-card__trend--up">▲ 22.5% in last 30 days</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon stat-card__icon--orange">🕒</div>
+                    <div class="stat-card__content">
+                        <p class="stat-card__label">Pending Orders</p>
+                        <h3 class="stat-card__value">8</h3>
+                        <p class="stat-card__trend">▼ 2 new orders</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__icon stat-card__icon--green">✅</div>
+                    <div class="stat-card__content">
+                        <p class="stat-card__label">Completed Orders</p>
+                        <h3 class="stat-card__value">48</h3>
+                        <p class="stat-card__trend stat-card__trend--down">▼ 16.5% in last 30 days</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="sales-overview">
+                    <div class="sales-overview__header">
+                        <h4 class="sales-overview__title">Sales Overview</h4>
+                        <span class="sales-overview__legend">
+                            <span class="sales-overview__legend-dot"></span> Revenue (₦)
+                        </span>
+                    </div>
+                    <div class="sales-overview__chart-wrapper">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="top-selling">
+                    <h4 class="top-selling__title">Top Selling Meals</h4>
+                    <div class="top-selling__item">
+                        <img src="Rectangle 18.svg" alt="Jollof Rice and Meat" class="top-selling__item-img">
+                        <div class="top-selling__item-info">
+                            <p class="top-selling__item-name">Jollof Rice and Meat</p>
+                            <p class="top-selling__item-orders">120 Orders</p>
+                        </div>
+                        <p class="top-selling__item-price">₦70,000</p>
+                    </div>
+                    <div class="top-selling__item">
+                        <img src="Frame 111.svg" alt="Beans and Plantain" class="top-selling__item-img">
+                        <div class="top-selling__item-info">
+                            <p class="top-selling__item-name">Beans and Plantain</p>
+                            <p class="top-selling__item-orders">10 Orders</p>
+                        </div>
+                        <p class="top-selling__item-price">₦30,000</p>
+                    </div>
+                    <div class="top-selling__item">
+                        <img src="Frame 155.png" alt="Edikaiko" class="top-selling__item-img">
+                        <div class="top-selling__item-info">
+                            <p class="top-selling__item-name">Edikaiko</p>
+                            <p class="top-selling__item-orders">3 Orders</p>
+                        </div>
+                        <p class="top-selling__item-price">₦24,000</p>
+                    </div>
+                    <div class="top-selling__item">
+                        <img src="Frame 155 (2).svg" alt="Amala and Ewedu" class="top-selling__item-img">
+                        <div class="top-selling__item-info">
+                            <p class="top-selling__item-name">Amala and Ewedu</p>
+                            <p class="top-selling__item-orders">4 Orders</p>
+                        </div>
+                        <p class="top-selling__item-price">₦16,000</p>
+                    </div>
+                    <button class="top-selling__view-all">View all</button>
+                </div>
+
+                <div class="recent-orders">
+                    <div class="recent-orders__header">
+                        <h4 class="recent-orders__title">Recent Orders</h4>
+                        <a href="#" class="recent-orders__view-all">View all</a>
+                    </div>
+                    <table class="recent-orders__table">
+                        <tr class="recent-orders__row">
+                            <td class="recent-orders__id">MM-2487</td>
+                            <td class="recent-orders__customer">Jane Doe</td>
+                            <td class="recent-orders__amount">₦70,000</td>
+                            <td><span class="status-tag status-tag--pending">Pending</span></td>
+                        </tr>
+                        <tr class="recent-orders__row">
+                            <td class="recent-orders__id">MM-2487</td>
+                            <td class="recent-orders__customer">Titi Oke</td>
+                            <td class="recent-orders__amount">₦70,000</td>
+                            <td><span class="status-tag status-tag--delivered">Delivered</span></td>
+                        </tr>
+                        <tr class="recent-orders__row">
+                            <td class="recent-orders__id">MM-2487</td>
+                            <td class="recent-orders__customer">Alex Oko</td>
+                            <td class="recent-orders__amount">₦70,000</td>
+                            <td><span class="status-tag status-tag--delivered">Delivered</span></td>
+                        </tr>
+                        <tr class="recent-orders__row">
+                            <td class="recent-orders__id">MM-2487</td>
+                            <td class="recent-orders__customer">Femi Ojo</td>
+                            <td class="recent-orders__amount">₦70,000</td>
+                            <td><span class="status-tag status-tag--ready">Ready</span></td>
+                        </tr>
+                        <tr class="recent-orders__row">
+                            <td class="recent-orders__id">MM-2487</td>
+                            <td class="recent-orders__customer">Isa Ali</td>
+                            <td class="recent-orders__amount">₦70,000</td>
+                            <td><span class="status-tag status-tag--pending">Pending</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="vendor.js"></script>
+    <!-- <script src="dashboard.js"></script> -->
+</body>
+</html>

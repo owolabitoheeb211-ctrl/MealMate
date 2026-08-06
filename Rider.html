@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MealMate Admin Dashboard</title>
+  <link rel="stylesheet" href="Admin.css" />
+</head>
+<body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" aria-hidden="true" />
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <a href="index.html"><img alt="mealmate" src="logo.svg"></a>
+      </div>
+      <div class="brand-text">
+        <!-- <strong>MealMate</strong> -->
+        <!-- <span>Admin Panel</span> -->
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Main navigation">
+      <a href="#"><span class="icon"><img src="mage_dashboard.svg"></span> Dashboard</a>
+      <a href="#"><span class="icon"><img src="fluent-emoji-high-contrast_cook (1).svg"></span> Verify vendors</a>
+      <a href="#"><span class="icon">▤</span> Approve Business</a>
+      <a href="customer.html"><span class="icon"><img src="" alt=""></span> Manage Customer</a>
+      <a href="#"><span class="icon"><img src="Group 1.svg"></span> Monitor Orders</a>
+      <a href="#"><span class="icon"><img src="line-md_star.svg"></span> Moderate Reviews</a>
+      <a href="#"><span class="icon"><img src="tabler_message.svg"></span> Manage Disputes</a>
+      <a href="#"><span class="icon"><img src="tabler_wallet.svg"></span> Monitor Transaction</a>
+      <a href="#"><span class="icon">▂</span> View Analytics</a>
+      <a href="#" class="active"><span class="icon"><img src="boxicons_scooter-delivery (1).svg"></span> Manage Rider</a>
+    </nav>
+
+    <div class="profile-card">
+      <div></div>
+      <div class="profile-info">
+        <img src="Ellipse 14.svg">
+        <strong>Admin Profile</strong>
+        <span>Favour E.D.</span>
+      </div>
+      <a><span class="profile-chevron"><img src="Vector (3).svg"></span></a>
+    </div>
+  </aside>
+
+  <div class="overlay" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="topbar">
+      <label for="sidebar-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+      <div class="search-box">
+        <span><img src="Group.svg"></span>
+        <input type="text" placeholder="Search......." />
+      </div>
+
+      <div class="topbar-right">
+        <div class="user-chip">
+          <div><img src="Ellipse 14.svg" alt="admin"></div>
+          <span>Hello Favour</span>
+        </div>
+        <button class="bell" aria-label="Notifications"><img src="Group 3.svg"></button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div>
+          <h1>Riders</h1>
+          <p>Manage Platform Riders</p>
+        </div>
+
+        <div class="hero-actions">
+          <label class="mini-search">
+            <span><img src="Group.svg" alt=""></span>
+            <input type="text" placeholder="Search anything..." />
+          </label>
+          <button class="filter-btn"><img src="funnel.svg"> <span>Filter</span></button>
+        </div>
+      </section>
+
+      <section class="table-card" aria-label="Riders table">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Riders</th>
+                <th>Phone</th>
+                <th>Vehicle Type</th>
+                <th>Total Deliveries</th>
+                <th>Total Earned</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Audu Malami</td>
+                <td>08032158692</td>
+                <td>Motorcycle</td>
+                <td>148</td>
+                <td>₦302,800</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+              <tr>
+                <td>Segun Odebgbale</td>
+                <td>09147658567</td>
+                <td>Motorcycle</td>
+                <td>56</td>
+                <td>₦133,000</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+              <tr>
+                <td>Felix Udoh</td>
+                <td>07066678732</td>
+                <td>Car</td>
+                <td>89</td>
+                <td>₦156,000</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+              <tr>
+                <td>Micheal Wilson</td>
+                <td>08123543344</td>
+                <td>Motorcycle</td>
+                <td>102</td>
+                <td>₦224,500</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+              <tr>
+                <td>Folake Odesanya</td>
+                <td>09044456213</td>
+                <td>Car</td>
+                <td>88</td>
+                <td>₦250,000</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+              <tr>
+                <td>Shehu Bello</td>
+                <td>07023245687</td>
+                <td>Bicycle</td>
+                <td>150</td>
+                <td>₦150,000</td>
+                <td><span class="status active">Active</span></td>
+                <td><a href="#" class="view-link">View</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <a href="#" class="page-btn active">&lt;</a>
+          <a href="#" class="page-btn">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <span class="page-ellipsis">...</span>
+          <a href="#" class="page-btn">&gt;</a>
+        </nav>
+      </section>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="Admin.js"></script>
+</body>
+</html>
